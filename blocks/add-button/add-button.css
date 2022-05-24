@@ -1,0 +1,15 @@
+#add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+}
+@media screen and (max-width: 767px) {
+    #add-button {
+        width: 100%;
+        margin: 36px 0 0;
+    }
+}

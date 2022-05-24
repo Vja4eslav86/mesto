@@ -10,56 +10,89 @@
 <body>
     <div class="page">
         <header class="header">
-            <img src="" alt="" class="logo logo_place_header">
+            <img src="./images/logo.svg" alt="Логотип" class="logo logo_place_header">
         </header>
+        <div class="line"></div>
         <main class="content">
             <section class="profile">
-                <img src="./images/logo.svg" alt="логотип" class="avatar">
-                <div class="info">
-                    <h1 class="info__title">Жак-Ив Кусто</h1>
-                    <div class="info__edit-button"></div>
-                    <p class="info__subtitle"></p>
+                <div class="profile-items">
+                    <img src="./images/image.jpg" alt="аватар" class="avatar">
+                    <div class="info">
+                        <div class="block block_place_profile">
+                            <h1 class="info__title">Жак-Ив Кусто</h1>
+                            <a href="#" id="edit-button"></a>
+                        </div>
+                        <p class="info__subtitle">Исследователь океана</p>
+                    </div>
                 </div>
-                <div class="add-button"></div>
+                <a href id="add-button">
+                    <img src="./images/Vector.svg" alt="кнопка" class="add-button__plus">
+                </a>
             </section>
             <section class="elements">
                 <ul class="grid">
                     <li class="element">
-                        <img src="" alt="" class="element__photo">
-                        <h2 class="element__title"></h2>
-                        <img src="" alt="" class="element__like">
+                        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__photo">
+                        <div class="block block_place_element">
+                            <h2 class="element__title">Карачаевск</h2>
+                            <img src="./images/Group-1.svg" alt="Лайк" class="element__like">
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="" alt="" class="element__photo">
-                        <h2 class="element__title"></h2>
-                        <img src="" alt="" class="element__like">
+                        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус" class="element__photo">
+                        <div class="block block_place_element">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+                            <img src="./images/Group-1.svg" alt="Лайк" class="element__like">
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="" alt="" class="element__photo">
-                        <h2 class="element__title"></h2>
-                        <img src="" alt="" class="element__like">
+                        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай" class="element__photo">
+                        <div class="block block_place_element">
+                            <h2 class="element__title">Домбай</h2>
+                            <img src="./images/Group-1.svg" alt="Лайк" class="element__like">
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="" alt="" class="element__photo">
-                        <h2 class="element__title"></h2>
-                        <img src="" alt="" class="element__like">
+                        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус" class="element__photo">
+                        <div class="block block_place_element">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+                            <img src="./images/Group-1.svg" alt="Лайк" class="element__like">
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="" alt="" class="element__photo">
-                        <h2 class="element__title"></h2>
-                        <img src="" alt="" class="element__like">
+                        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай" class="element__photo">
+                        <div class="block block_place_element">
+                            <h2 class="element__title">Домбай</h2>
+                            <img src="./images/Group-1.svg" alt="Лайк" class="element__like">
+                        </div>
                     </li>
                     <li class="element">
-                        <img src="" alt="" class="element__photo">
-                        <h2 class="element__title"></h2>
-                        <img src="" alt="" class="element__like">
+                        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаево-Черкессия" class="element__photo">
+                        <div class="block block_place_element">
+                            <h2 class="element__title">Карачаево-Ч...</h2>
+                            <img src="./images/Group-1.svg" alt="Лайк" class="element__like">
+                        </div>
                     </li>
                 </ul>
             </section>
-        </div>
+        </main>
         <footer class="footer">
-            <img src="" alt="" class="logo logo_place_footer">
+            <p class="logo logo_place_footer">&copy; 2020 Mesto Russia</p>
         </footer>
     </div>
+    <div id="popup">
+        <div class="popup__container">
+            <div class="popup__content">
+                <a href="#" id="popup__close"></a>
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="popup__form">
+                    <input class="name-input" type="text" name="my-name"> 
+                    <input class="job-input" type="text" name="my-job"> 
+                    <button id="popup__button" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
