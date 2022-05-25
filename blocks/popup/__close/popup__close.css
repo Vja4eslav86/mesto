@@ -2,7 +2,6 @@
     position: absolute;
     background-image: url(../../../images/Close\ Icon.png);
     background-size: contain;
-    cursor: pointer;
     width: 32px;
     height: 32px;
     top: -40px;
