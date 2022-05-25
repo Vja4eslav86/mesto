@@ -1,4 +1,4 @@
-#add-button {
+.add-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,9 +6,15 @@
     height: 50px;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    opacity: 0.6;
 }
 @media screen and (max-width: 767px) {
-    #add-button {
+    .add-button {
         width: 100%;
         margin: 36px 0 0;
     }

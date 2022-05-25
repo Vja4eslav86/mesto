@@ -1,26 +1,34 @@
-let formElement = document.querySelector('.popup');
 let nameInput = document.querySelector('.name-input');
 let jobInput = document.querySelector('.job-input'); 
-let editButton = document.querySelector('#edit-button');
-let addButton = document.querySelector('#add-button');
-let popButon = document.querySelector('#popup__close');
-let closeButton = document.querySelector('#popup__button');
+let mainPopup = document.querySelector('.popup');
+
+const addButton = document.querySelector('.add-button');
+const openPopup = document.querySelector('.edit-button');
+const closePopup = document.querySelector('.popup__close');
+
+let closeButton = document.querySelector('.popup__button');
+
 let form = document.querySelector('.popup__form');
 let myName = form.querySelector('.my-name');
 let myJob = form.querySelector('.my-job');
 
-function openPopup() {
-    const openPopup = document.getElementById('popup_opened');
-    popup.classList.toggle('active');
-    console.log('работает');
-}
+let infoTitle = document.querySelector('.info__title');
+let infoSubtitle = document.querySelector('.info__subtitle');
 
-function formSubmitHandler (evt) {
-    evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
+openPopup.addEventListener('click', function formSubmitHandler (evt) {
+    evt.preventDefault(); 
+    mainPopup.classList.add('popup_opened');
+})
+closePopup.addEventListener('click', function formSubmitHandler (evt) {
+    evt.preventDefault(); 
+    mainPopup.classList.remove('popup_opened');
+})
+
+
+mainPopup.addEventListener('submit', function formSubmitHandler (evt) {
+    evt.preventDefault(); 
     nameInput.value;
     jobInput.value;
-    myName.textContent = nameInput.value;
-    myJob.textContent = jobInput.value;
-}
-
-formElement.addEventListener('submit', formSubmitHandler); 
+    infoTitle.textContent = nameInput.value; 
+    infoSubtitle.textContent = jobInput.value;
+}); 
