@@ -1,4 +1,4 @@
-.add-button {
+.profile__button_function_add {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,14 +7,9 @@
     border: 2px solid #FFFFFF;
     border-radius: 2px;
     box-sizing: border-box;
-    cursor: pointer;
-}
-
-.add-button:hover {
-    opacity: 0.6;
 }
 @media screen and (max-width: 767px) {
-    .add-button {
+    .profile__button_function_add {
         width: 100%;
         margin: 36px 0 0;
     }

@@ -3,6 +3,10 @@
     height: 19px;
     margin: 5px 5px -1px 0;
     cursor: pointer;
+    background-image: url(../../../images/Vector-1.svg);
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 .element__like:hover {
     opacity: 0.6;

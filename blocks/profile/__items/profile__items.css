@@ -1,8 +1,8 @@
-.profile-items {
+.profile__items {
     display: flex;
 }
 @media screen and (max-width: 767px) {
-    .profile-items {
+    .profile__items {
         flex-direction: column;
         width: 100%;
     }

@@ -2,7 +2,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    margin: auto;
     width: 430px;
     background-color: #ffffff;
     border-radius: 10px;
