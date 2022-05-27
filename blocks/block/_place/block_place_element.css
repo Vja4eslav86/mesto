@@ -1,7 +1,9 @@
 .block_place_element {
-    padding: 29px 15px 31px 21px;
+    display: flex;
+    padding: 25px 15px 25px 21px;
     max-width: 246px;
     justify-content: space-between;
+    align-items: center;
 }
 @media screen and (max-width: 1023px) {
     .block_place_element {
